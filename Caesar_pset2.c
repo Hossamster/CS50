@@ -10,10 +10,10 @@ int main(int argc, string argv[])
 
     if(argc == 2 && check(argv[1]))
     {
-         string plain_text = get_string("Please enter ur plain text: ");
+         string plain_text = get_string("plaintext: ");
     
         int num = strlen(plain_text);
-        
+        printf("ciphertext: "); 
         for (int i = 0; i < strlen(plain_text); i++)
         {
             if(isalpha(plain_text[i]))
